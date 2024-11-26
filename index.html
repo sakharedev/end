@@ -1,0 +1,22 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>User Input Greeting</title>
+
+    <script>
+      function displayGreeting() {
+        const name = document.getElementById('nameInput').value;
+        const message = `Hello ${name}... Welcome To the World of Javascript! I am Paras Sakhare Nice to know you`;
+        document.getElementById('greetingMessage').innerText = message;
+      }
+    </script>
+    
+  </head>
+  <body>
+    <h1>Greeting App</h1>
+    <label for="nameInput">Enter your Name: </label>
+    <input type="text" id="nameInput" placeholder="Your Name" name="" value="">
+    <button onClick="displayGreeting()" type="">Submit</button>
+    <p id="greetingMessage"></p>
+  </body>
+</html>
